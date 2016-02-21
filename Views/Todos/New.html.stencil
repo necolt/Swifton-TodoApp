@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>Todo</title>
+</head>
+<body>
+<h1>Todo</h1>
+
+<form class="new_todo" id="new_todo" action="/todos" accept-charset="UTF-8" method="post">
+  <div class="field">
+    <label for="todo_title">Title</label><br>
+    <input type="text" name="title" id="todo_title" />
+  </div>
+  <div class="field">
+    <label for="todo_completed">Completed</label><br>
+    <input name="completed" type="hidden" value="0" /><input type="checkbox" value="1" name="completed" id="todo_completed" />
+  </div>
+  <div class="actions">
+    <input type="submit" name="commit" value="Create Todo" />
+  </div>
+</form>
+
+<a href="/todos">Back</a>
+</body>
+</html>

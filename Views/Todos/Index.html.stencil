@@ -1,0 +1,36 @@
+<body>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="/jquery_ujs.js"></script>
+</head>
+<html>
+<h1>Listing Todos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Completed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      {% for todo in todos %}
+      <tr>
+        <td>{{ todo.title }}</td>
+        <td>{{ todo.completed }}</td>
+        <td><a href="/todos/{{ todo.id }}">Show</a></td>
+        <td><a href="/todos/{{ todo.id }}/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" rel="nofollow" data-method="delete" href="/todos/{{ todo.id }}">Destroy</a></td>
+      </tr>
+      {% endfor %}
+  </tbody>
+</table>
+
+<br>
+
+<a href="/todos/new">New Todo</a>
+
+</body>
+</html>

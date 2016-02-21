@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Todo</title>
+</head>
+<body>
+<h1>Todo Show</h1>
+
+<p>
+  <strong>Title:</strong>
+  {{ title }}
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  {{ completed }}
+</p>
+
+<a href="/todos/{{ id }}/edit">Edit</a> |
+<a href="/todos">Back</a>
