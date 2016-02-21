@@ -1,0 +1,15 @@
+{
+    "name": "Swifton TodoApp Example",
+    "description": "An example TodoApp using Swifton web framework on Heroku.",
+    "repository": "https://github.com/necolt/Swifton-TodoApp",
+    "website": "https://github.com/necolt/Swifton-TodoApp",
+    "keywords": [
+        "swifton",
+        "curassow"
+    ],
+    "buildpacks": [
+        {
+            "url": "https://github.com/kylef/heroku-buildpack-swift"
+        }
+    ]
+}
