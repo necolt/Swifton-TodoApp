@@ -3,7 +3,7 @@
 ## Getting Started
 
 * Install latest Development snapshot from [Swift.org](https://swift.org/download/) or via [swiftenv](https://github.com/kylef/swiftenv).
-* Checkout [TodoApp](https://github.com/swiftonio/example) example project.
+* Checkout [TodoApp](https://github.com/necolt/Swifton-TodoApp) example project.
 * Run ```swift build``` inside app.
 * Run ```./.build/debug/TodoApp```.
 * Open ```http://0.0.0.0:8000/todos``` in your browser.
