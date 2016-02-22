@@ -41,8 +41,8 @@ class TodosController: ApplicationController {
     }
 
     filter("setTodo") { request in
-        if let tod = Todo.find(request.params["id"]) { 
-            self.todo = tod as? Todo
-        }
+        guard let t = Todo.find(request.params["id"]) else { return self.redirectTo("/todos") } 
+        self.todo = t as? Todo
+        return self.next
     }
 }}
