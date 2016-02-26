@@ -1,6 +1,7 @@
 <html>
 <head>
   <title>Todo</title>
+  <meta charset="UTF-8">
 </head>
 <body>
 <h1>Editing Todo</h1>
