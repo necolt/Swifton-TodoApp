@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-* Install latest Development snapshot from [Swift.org](https://swift.org/download/) or via [swiftenv](https://github.com/kylef/swiftenv).
+* Install exact Development snapshot [version](https://github.com/necolt/Swifton-TodoApp/blob/master/.swift-version) from [Swift.org](https://swift.org/download/) or via [swiftenv](https://github.com/kylef/swiftenv).
 * Checkout [TodoApp](https://github.com/necolt/Swifton-TodoApp) example project.
 * Run ```swift build``` inside app.
 * Run ```./.build/debug/Swifton-TodoApp```.
