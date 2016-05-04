@@ -1,9 +1,10 @@
 import Swifton
-import Curassow
+import HTTPServer
 
-let router = Router()
-router.resources("todos", TodosController())
-router.get("/", TodosController()["index"])
+let router = Router.create { route in
+    route.resources("todos", controller: TodosController())
+    route.get("/", respond: TodosController()["index"])
+}
 
-serve { router.respond($0) }
+try Server(responder: router).start()
 
