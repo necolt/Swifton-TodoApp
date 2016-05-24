@@ -6,7 +6,7 @@
 * Checkout [TodoApp](https://github.com/necolt/Swifton-TodoApp) example project.
 * Run ```swift build``` inside app.
 * Run ```./.build/debug/Swifton-TodoApp```.
-* Open ```http://0.0.0.0:8000/todos``` in your browser.
+* Open ```http://0.0.0.0:8080/todos``` in your browser.
 
 ## Updating
 
